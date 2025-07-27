@@ -1,26 +1,20 @@
-# 🌤️ Weather Anomaly Detection Platform
+# 🌤️ Weather Analysis AI
 
-An AI-powered weather anomaly detection platform that combines statistical analysis, machine learning, and Gemini AI to identify and explain unusual weather patterns.
+An AI-powered weather anomaly detection platform that combines statistical analysis, and Gemini AI to identify and explain unusual weather patterns.
 
-## 🎯 Project Overview
-
-This platform is designed to win multiple hackathon categories:
-- **Best Data Hack** ⭐ (Primary target)
-- **Best Use of Gemini API** - AI-powered insights and explanations
-- **Best Use of MongoDB Atlas** - Store historical weather data and anomalies
-- **Best UI/UX** - Interactive weather visualizations
+## **Winner of Best Use of MongoDB Atlas at MLH DATAHACKFEST** ⭐ - Store historical weather data, anomalies and vector embeddings for RAG.
 
 ## 🚀 Core Features
 
-### 1. Real-Time Weather Data Collection
-- Pull from APIs like OpenWeatherMap, WeatherAPI, or NOAA
-- Collect temperature, precipitation, humidity, pressure, wind patterns
-- Historical data comparison (1901-2024)
+### 1. Historical Weather Data Collection
+- 
+- Collect temperature, precipitation, min and max averages from 1900 - 2024
+- Historical data comparison 
 
 ### 2. Anomaly Detection Engine
 - Statistical analysis (z-scores, moving averages)
-- Machine learning models for pattern recognition
 - Identify temperature extremes, unusual precipitation, pressure drops
+- Visualize data to identify unsual trends and extremes in data
 
 ### 3. Gemini AI Integration
 - Natural language explanations: "This temperature spike is 15°F above the 30-year average for July"
@@ -126,15 +120,11 @@ The API will be available at `http://localhost:8000`
 - **Moving Averages**: Detects trends and deviations from expected patterns
 - **Percentile Analysis**: Finds extreme values based on historical distribution
 
-### 2. Machine Learning
-- **Isolation Forest**: Unsupervised anomaly detection
-- **DBSCAN**: Density-based clustering for outlier detection
-- **Trend Analysis**: Linear regression for climate change detection
 
-### 3. Extreme Event Detection
+### 2. Extreme Event Detection
 - **Record Highs/Lows**: Identifies historical records
 - **Seasonal Anomalies**: Compares current patterns to seasonal norms
-- **Multi-variable Analysis**: Considers temperature, precipitation, and pressure together
+- **Multi-variable Analysis**: Considers temperature, precipitation together
 
 ## 🤖 AI Integration Features
 
@@ -152,59 +142,9 @@ The API will be available at `http://localhost:8000`
 ## 📈 Data Visualization (Frontend Ready)
 
 The API provides data in formats ready for:
-- **Heat maps** showing temperature anomalies over time
 - **Rainfall deviation charts**
-- **Extreme weather event timeline**
-- **Geographic anomaly mapping**
+- **Extreme weather events**
 - **Climate trend analysis charts**
-
-## 🎯 Demo Video Hook
-
-**Opening Line**: "Remember that crazy heatwave last month? My AI-powered weather platform detected it was the most extreme temperature anomaly in 20 years - let me show you how..."
-
-## 📊 Sample Anomalies to Showcase
-
-- Recent temperature records in your region
-- Unusual precipitation patterns
-- Pressure drops indicating severe weather
-- Seasonal shifts (early/late seasons)
-
-## 🚀 Quick Implementation Path
-
-### Day 1:
-- ✅ Set up weather API integration
-- ✅ Build basic anomaly detection algorithm
-- ✅ Create MongoDB schema for weather data
-- ✅ Start collecting data
-
-### Day 2:
-- ✅ Integrate Gemini for AI explanations
-- 🔄 Build interactive dashboard
-- 🔄 Create demo video showing recent extremes
-- 🔄 Polish UI and add compelling visualizations
-
-## 🔧 Development
-
-### Running Tests
-```bash
-# Install test dependencies
-pip install pytest pytest-asyncio
-
-# Run tests
-pytest
-```
-
-### Code Structure
-- **Modular Design**: Each component is self-contained
-- **Type Hints**: Full type annotation for better development experience
-- **Error Handling**: Comprehensive error handling and logging
-- **API Documentation**: Auto-generated with FastAPI
-
-## 📝 API Documentation
-
-Once the server is running, visit:
-- **Interactive API Docs**: `http://localhost:8000/docs`
-- **ReDoc Documentation**: `http://localhost:8000/redoc`
 
 ## 🤝 Contributing
 
@@ -217,15 +157,6 @@ Once the server is running, visit:
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🏆 Winning Strategy
-
-This platform is designed to win by:
-1. **Demonstrating real value** with actual anomaly detection
-2. **Showcasing AI integration** with natural language explanations
-3. **Using modern tech stack** (FastAPI, MongoDB Atlas, Gemini AI)
-4. **Providing compelling visualizations** and insights
-5. **Telling a story** about climate change and weather patterns
 
 ---
 
