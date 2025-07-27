@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6 backdrop-blur-sm bg-opacity-95 hover:shadow-xl transition-shadow;
+  }
+  
+  .stat-card {
+    @apply bg-gradient-to-br from-blue-500 to-purple-600 text-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all;
+  }
+  
+  .anomaly-high {
+    @apply bg-red-100 border-l-4 border-red-500 text-red-700;
+  }
+  
+  .anomaly-extreme {
+    @apply bg-red-200 border-l-4 border-red-600 text-red-800 font-semibold;
+  }
+  
+  .anomaly-medium {
+    @apply bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700;
+  }
+  
+  .anomaly-low {
+    @apply bg-blue-100 border-l-4 border-blue-500 text-blue-700;
+  }
+
+  /* Enhanced animations */
+  .pulse-glow {
+    animation: pulse-glow 2s infinite;
+  }
+
+  .float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent;
+  }
+}
+
+/* Custom keyframes */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+} 

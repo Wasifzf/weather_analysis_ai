@@ -1,0 +1,11 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pymongo
+pydantic
+python-dotenv
+requests
+pandas
+numpy
+scikit-learn
+google-generativeai
+python-multipart
