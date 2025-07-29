@@ -2,9 +2,9 @@
 
 An AI-powered weather anomaly detection platform that combines statistical analysis, and Gemini AI to identify and explain unusual weather patterns.
 
-## **Winner of Best Use of MongoDB Atlas at MLH DATAHACKFEST** ⭐ - Store historical weather data, anomalies and vector embeddings for RAG.
+## ⭐ **Winner of Best Use of MongoDB Atlas at MLH DATAHACKFEST** - Store historical weather data, anomalies and vector embeddings for RAG.
 
-## 🚀 Core Features
+## Core Features
 
 ### 1. Historical Weather Data Collection
 - 
@@ -27,26 +27,13 @@ An AI-powered weather anomaly detection platform that combines statistical analy
 - Save detected anomalies with metadata
 - User location preferences and alert settings
 
-## 🏗️ Architecture
+## Architecture
 
 ```
-weather-app-backend/
-│
-├── app/
-│   ├── __init__.py
-│   ├── main.py              # FastAPI entrypoint
-│   ├── models.py            # Pydantic models
-│   ├── db.py                # MongoDB connection
-│   ├── ingest.py            # Data ingestion
-│   ├── anomaly.py           # Anomaly detection
-│   ├── gemini.py            # Gemini AI integration
-│   └── utils.py             # Helper functions
-│
-├── requirements.txt
-└── README.md
+To be added
 ```
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### 1. Prerequisites
 - Python 3.8+
@@ -88,7 +75,7 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 The API will be available at `http://localhost:8000`
 
-## 📊 API Endpoints
+## API Endpoints
 
 ### Health & Status
 - `GET /` - Root endpoint
@@ -113,7 +100,7 @@ The API will be available at `http://localhost:8000`
 ### Dashboard
 - `GET /dashboard/summary` - Get comprehensive dashboard summary
 
-## 🔍 Anomaly Detection Methods
+## Anomaly Detection Methods
 
 ### 1. Statistical Analysis
 - **Z-Score Method**: Identifies values that deviate significantly from the mean
@@ -126,7 +113,7 @@ The API will be available at `http://localhost:8000`
 - **Seasonal Anomalies**: Compares current patterns to seasonal norms
 - **Multi-variable Analysis**: Considers temperature, precipitation together
 
-## 🤖 AI Integration Features
+## AI Integration Features
 
 ### Gemini AI Capabilities
 - **Natural Language Explanations**: Convert statistical anomalies into human-readable insights
@@ -139,14 +126,14 @@ The API will be available at `http://localhost:8000`
 - "Based on current patterns, expect increased precipitation in the coming months"
 - "This anomaly suggests a shift in seasonal weather patterns"
 
-## 📈 Data Visualization (Frontend Ready)
+## Data Visualization (Frontend Ready)
 
 The API provides data in formats ready for:
 - **Rainfall deviation charts**
 - **Extreme weather events**
 - **Climate trend analysis charts**
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -154,10 +141,8 @@ The API provides data in formats ready for:
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
-
-**Ready to detect the next weather anomaly?** 🌪️ 
